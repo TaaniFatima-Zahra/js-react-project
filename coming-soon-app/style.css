@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: white;
+    overflow: hidden;
+    background-color: #005f99; /* Bleu principal */
+    background-image: url(./assets/background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: lighten;
+}
+
+.container {
+    max-width: 30rem;
+    padding: 1rem;
+    margin-inline: auto;
+}
+
+header {
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header h1 {
+    font-size: 2rem;
+    font-family: serif;
+    color: #ffffff;
+}
+
+.accent {
+    color: #00aaff; /* Accent bleu clair */
+}
+
+main {
+    height: calc(92vh - 4rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    color: #ffffff;
+}
+
+main * {
+    position: relative;
+}
+
+.rocket {
+    position: absolute;
+    height: 10rem;
+    width: 10rem;
+    right: 0;
+    bottom: -15rem;
+    animation: launch 5s forwards infinite ease-in;
+}
+
+@keyframes launch {
+    from {
+        bottom: -15rem;
+    }
+    to {
+        bottom: calc(100vh + 15rem);
+    }
+}
+
+.rocket img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    z-index: -1;
+    transform: rotate(-45deg);
+    animation: fade-in 5s forwards infinite linear;
+}
+
+@keyframes fade-in {
+    0%, 25% {
+        opacity: 0;
+    }
+    50%, 75%, 100% {
+        opacity: 1;
+    }
+}
+
+main h1 {
+    font-size: 3rem;
+    color: #e0f7ff; /* Bleu très clair */
+}
+
+.time {
+    display: flex;
+    gap: 2rem;
+}
+
+.time h2 {
+    font-size: 2.5rem;
+    color: #e0f7ff;
+}
+
+button {
+    width: min-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+button:hover {
+    background-color: #ffffff;
+    color: #005f99; /* Changement vers bleu lors du survol */
+}
+
+@media screen and (min-width: 45rem) {
+    .container {
+        max-width: 45rem;
+    }
+}
+
+@media screen and (min-width: 64rem) {
+    .container {
+        max-width: 64rem;
+    }
+}
+
+@media screen and (min-width: 80rem) {
+    .container {
+        max-width: 80rem;
+    }
+}

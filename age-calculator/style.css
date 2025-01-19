@@ -1,0 +1,86 @@
+:root { 
+    --color-acent: #A0522D; /* Marron sépia pour les accents */
+    --color-background: #F5F5DC; /* Beige clair pour le fond */
+    --color-section: #D2B48C; /* Marron clair pour les sections */
+    --color-text: #3E2723; /* Marron foncé pour le texte */
+    --color-button-hover: #8B4513; /* Marron chocolat pour le survol */
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--color-background);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    color: var(--color-text);
+}
+
+h1:last-child {
+    color: var(--color-acent);
+}
+
+main {
+    padding: 2rem;
+    display: grid;
+    gap: 2rem;
+    background-color: var(--color-section);
+    border-radius: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+header {
+    display: grid;
+    gap: 1rem;
+    text-align: center;
+}
+
+section {
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+input,
+button {
+    border: none;
+    outline: none;
+    padding: 0.5rem 0.75rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+}
+
+input {
+    flex: 1;
+    background-color: #FFF;
+}
+
+button {
+    background-color: var(--color-acent);
+    color: #FFF;
+    padding: 0.5rem 1.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: var(--color-button-hover);
+}
+
+footer {
+    color: var(--color-text);
+    text-align: center;
+}

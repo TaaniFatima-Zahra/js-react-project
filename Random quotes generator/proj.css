@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    background: url('img/image.png') no-repeat center center/cover;
+    background-blend-mode: darken;
+    background-color: rgba(50, 50, 50, 0.7); /* Teinte sombre pour un look professionnel */
+}
+
+.container {
+    width: 550px;
+    height: 480px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.container:hover {
+    transform: scale(1.02);
+}
+
+h1 {
+    background-color: #333;
+    color: white;
+    border: solid #ddd 3px;
+    padding: 10px;
+    width: 80%;
+    margin: 20px auto;
+    border-radius: 10px;
+    font-size: 2rem;
+    text-transform: uppercase;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+.content {
+    width: 100%;
+    height: 310px;
+    border-radius: 30px;
+    background-color: #f9f9f9;
+    padding: 50px 40px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.text {
+    font-size: 1.7rem;
+    font-weight: bold;
+    line-height: 1.5;
+    color: #333;
+}
+
+.pers {
+    margin-top: 1cap;
+    font-size: 1.5rem;
+    color: #8B0000;  /* Rouge foncé pour une touche d'élégance */
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.butt {
+    padding: 15px 10px;
+    margin-top: 15px;
+}
+
+#newquote {
+    background: linear-gradient(to right, #333, #555);
+    color: white;
+    height: 3cap;
+    width: 15cap;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+#newquote:hover {
+    background: linear-gradient(to right, #555, #777);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: 90%;
+        height: auto;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        width: 100%;
+    }
+
+    .text {
+        font-size: 1.3rem;
+    }
+
+    .pers {
+        font-size: 1.2rem;
+    }
+
+    #newquote {
+        width: 100%;
+    }
+}

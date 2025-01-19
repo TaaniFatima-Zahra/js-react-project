@@ -1,0 +1,127 @@
+:root {
+    --bg-color: #2E2E2E; /* Fond gris foncé élégant */
+    --primary-color: #FFFFFF; /* Fond blanc pour le contenu */
+    --accent-color: #8B0000; /* Rouge foncé pour une touche élégante */
+    --grey-200: #D3D3D3; /* Gris clair pour les bordures */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: var(--accent-color);
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #5A0000; /* Rouge plus foncé au survol */
+}
+
+body {
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    max-width: 35rem;
+    padding: 2.5rem;
+    background-color: var(--primary-color);
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+header h3 {
+    font-size: 1.8rem;
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+canvas {
+    border: 3px solid var(--grey-200);
+    width: 60%;
+    aspect-ratio: 1;
+    border-radius: 10px;
+    display: none;
+    transition: transform 0.3s ease-in-out;
+}
+
+canvas:hover {
+    transform: scale(1.05);
+}
+
+input {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.1rem;
+    border: 2px solid var(--accent-color);
+    border-radius: 10px;
+    outline: none;
+    transition: border 0.3s ease-in-out;
+}
+
+input:focus {
+    border-color: #5A0000;
+}
+
+button {
+    width: 100%;
+    font-size: 1.2rem;
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    border: none;
+    outline: none;
+    padding: 1.2rem;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #5A0000;
+    transform: translateY(-3px);
+}
+
+@media (max-width: 600px) {
+    main {
+        padding: 1.5rem;
+        max-width: 90%;
+    }
+
+    header h3 {
+        font-size: 1.5rem;
+    }
+
+    input {
+        font-size: 1rem;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+}
