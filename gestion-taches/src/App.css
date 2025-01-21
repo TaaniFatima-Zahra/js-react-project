@@ -1,0 +1,110 @@
+/* Style général de l'application */
+.App {
+  text-align: center;
+  margin: 20px auto;
+  max-width: 600px;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #ff9a8b, #fad0c4); /* Couleurs modifiées */
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Titre de l'application */
+.app-title {
+  color: #2d2d2d; /* Couleur du titre modifiée */
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Texte lorsqu'il n'y a pas de tâches */
+.no-tasks {
+  font-size: 18px;
+  color: #888; /* Couleur modifiée */
+  font-style: italic;
+  margin-top: 20px;
+}
+
+/* Liste des tâches */
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  margin: 10px 0;
+}
+
+.task-item:hover {
+  transform: scale(1.02);
+}
+
+/* Texte des tâches */
+.task-item span {
+  flex-grow: 1;
+  margin-left: 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+/* Tâche complétée */
+.task-item.completed span {
+  text-decoration: line-through;
+  color: #b0b0b0; /* Couleur modifiée */
+}
+
+/* Bouton de suppression */
+button.delete-btn {
+  margin-left: 10px;
+  padding: 8px 15px;
+  border: none;
+  background: #f44336; /* Rouge pour suppression */
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+button.delete-btn:hover {
+  background: #e53935; /* Rouge foncé pour suppression */
+}
+
+/* Bouton d'ajout */
+button.add-btn {
+  margin-left: 10px;
+  padding: 8px 15px;
+  border: none;
+  background: #4caf50; /* Vert pour ajout */
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+button.add-btn:hover {
+  background: #43a047; /* Vert foncé pour ajout */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .task-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .task-item span {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  button {
+    width: 100%;
+    text-align: center;
+  }
+}
