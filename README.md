@@ -1,0 +1,1 @@
+Ces mini-projets constituent un ensemble d’exercices pratiques réalisés pour appliquer mes connaissances en JavaScript. Ils m’ont permis de renforcer mes compétences en développement frontend et d’explorer différentes fonctionnalités du langage. Chaque projet cible un aspect précis pour approfondir ma maîtrise technique.
